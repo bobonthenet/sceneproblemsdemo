@@ -1,5 +1,5 @@
 import BootScene from 'scenes/boot';
-import DefaultScene from 'scenes/default';
+import BobScene from 'scenes/bob';
 import MenuScene from 'scenes/menu';
 
 window.game = new Phaser.Game({
@@ -55,7 +55,7 @@ window.game = new Phaser.Game({
   },
   scene: [
     BootScene,
-    DefaultScene,
+    BobScene,
     MenuScene
   ],
 

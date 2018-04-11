@@ -1,10 +1,10 @@
 import BadGuy from '../sprites/BadGuy';
 import Player from '../sprites/Player';
 
-export default class Default extends Phaser.Scene {
+export default class Bob extends Phaser.Scene {
 
   constructor () {
-    super('default');
+    super('bob');
 
   }
 
@@ -23,7 +23,7 @@ export default class Default extends Phaser.Scene {
 
   create () {
     this.time.delayedCall(5000, function(){
-      this.scene.start('default', {level: 'level2'});
+      this.scene.start('bob', {level: 'level2'});
     }, [], this);
 
     this.map = this.make.tilemap({ key: 'map'});
