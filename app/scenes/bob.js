@@ -65,10 +65,10 @@ export default class Bob extends Phaser.Scene {
     this.cameras.main.setBounds();
 
     this.matter.world.on('collisionstart', function(event, bodyA, bodyB) {
-      if(bodyA.gameObject && bodyA.gameObject.collision) {
+      if(bodyA.gameObject.collision) {
         bodyA.gameObject.collision(bodyB.gameObject);
       }
-      if(bodyB.gameObject && bodyB.gameObject.collision) {
+      if(bodyB.gameObject.collision) {
         bodyB.gameObject.collision(bodyA.gameObject);
       }
     }, this);
